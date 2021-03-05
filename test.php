@@ -5,6 +5,10 @@ $diceNumber = mt_rand(1, 6);
 //initialize
 $numText = "";
 
+if ($numText == "") {
+    echo "hey"; # heyya
+}
+
 //calling switch statement
   switch ($diceNumber) 
   {
