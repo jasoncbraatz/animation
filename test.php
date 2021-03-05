@@ -1,14 +1,12 @@
 <?php
-//initialize with a random integer within range
-$diceNumber = mt_rand(1, 6);
 
-//initialize
-$numText = "";
+echo "hey - "; # heyya
 
-if ($numText == "") {
-    echo "hey"; # heyya
-}
 
+function turd() {
+    //initialize
+ $numText = "";
+ $diceNumber = mt_rand(1, 6);
 //calling switch statement
   switch ($diceNumber) 
   {
@@ -25,17 +23,21 @@ if ($numText == "") {
     break;
   case 5:
     $numText = "Five";
-    echo $numText;
-    // break; //without specify break or return it will continue execute to next case.
+    // echo $numText;
+     break; //without specify break or return it will continue execute to next case.
   case 6:
-    $numText = "Six";
-    echo $numText;
+   // $numText = "Six";
+     $numText = "Six";
     break;
   default:
     $numText = "unknown";
   }
-  
-  //display result
   echo 'Dice show number '.$numText.'.';
+}
+
+ turd();
+
+  //display result
+  
 
 ?>
